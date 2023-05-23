@@ -1,0 +1,9 @@
+{
+    "name": "my-express-app",
+    "version": "1.0.0",
+    "description": "A bare minimum Express application",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  

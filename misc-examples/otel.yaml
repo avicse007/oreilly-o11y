@@ -1,0 +1,11 @@
+opentelemetry:
+  tracing:
+    enabled: true
+    exporter:
+      jaeger:
+        endpoint: http://jaeger-collector:14250
+    propagation:
+      b3:
+        enabled: true
+      w3c:
+        enabled: true
