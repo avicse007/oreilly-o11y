@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",
+  "include": ["src/**/*", "src/**/*.json"],
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "baseUrl": "src",
+    "rootDir": "src",
+    "emitDeclarationOnly": true,
+    "paths": {
+      "lib/*": [
+        "lib/*"
+      ],
+      "modules/*": [
+        "modules/*"
+      ]
+    }
+  }
+}

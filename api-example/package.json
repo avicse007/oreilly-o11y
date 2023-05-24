@@ -13,7 +13,7 @@
     "build": "tsc",
     "clean": "rm -rf ./dist",
     "start": "ts-node src/server.ts",
-    "start-otel": "ts-node --require ../../example-package/src/modules/observability src/server.ts",
+    "start-otel": "ts-node --require ../example-package/src/metrics.ts src/server.ts",
     "lint": "eslint src/ --ext .ts",
     "lint:fix": "yarn typecheck && yarn eslint src/ --ext",
     "test": "jest --runInBand --detectOpenHandles"
