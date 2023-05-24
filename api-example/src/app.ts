@@ -1,4 +1,4 @@
-import { hello } from './src/controllers';
+import { hello } from './controllers/controllers';
 import express from 'express';
 
 const app = express();
