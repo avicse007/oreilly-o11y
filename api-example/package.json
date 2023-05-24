@@ -13,6 +13,7 @@
     "build": "tsc",
     "clean": "rm -rf ./dist",
     "start": "ts-node src/server.ts",
+    "start-otel": "ts-node --require ../../example-package/src/modules/observability src/server.ts",
     "lint": "eslint src/ --ext .ts",
     "lint:fix": "yarn typecheck && yarn eslint src/ --ext",
     "test": "jest --runInBand --detectOpenHandles"
@@ -20,12 +21,12 @@
   "keywords": [],
   "license": "UNLICENSED",
   "devDependencies": {
-    "express": "4.18.2",
     "@tsconfig/node18": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.31.0",
+    "express": "4.18.2",
     "jest": "^27.0.4",
     "node-mocks-http": "^1.10.1",
     "prettier": "^2.3.1",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "@opentelemetry/instrumentation": "latest",
-    "@opentelemetry/sdk-node": "latest"
+    "@opentelemetry/sdk-node": "latest",
+    "@opentelemetry/tracing": "^0.24.0"
   }
 }
