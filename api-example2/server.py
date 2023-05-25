@@ -13,7 +13,7 @@ tracer = get_tracer("service-name-here")
 app.config['DEBUG'] = True  # Enable debug mode (auto-reloads on code changes)
 
 # Routes
-@app.route('/api/hello', methods=['GET'])
+@app.route('/hello', methods=['GET'])
 def hello():
     response = requests.get('http://localhost:8080')
     if response.status_code == 200:
@@ -27,4 +27,4 @@ def helloworld():
     return f"Hello, World!"
     
 if __name__ == '__main__':
-    app.run(port=5050)
+    app.run(port=3000)

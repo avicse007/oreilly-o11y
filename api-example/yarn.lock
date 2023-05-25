@@ -919,7 +919,7 @@
   dependencies:
     "@octokit/openapi-types" "^17.2.0"
 
-"@opentelemetry/api-logs@0.39.1":
+"@opentelemetry/api-logs@0.39.1", "@opentelemetry/api-logs@^0.39.1":
   version "0.39.1"
   resolved "https://registry.yarnpkg.com/@opentelemetry/api-logs/-/api-logs-0.39.1.tgz#3ea1e9dda11c35f993cb60dc5e52780b8175e702"
   integrity sha512-9BJ8lMcOzEN0lu+Qji801y707oFO4xT3db6cosPvl+k7ItUHKN5ofWqtSbM9gbt1H4JJ/4/2TVrqI9Rq7hNv6Q==
@@ -1083,7 +1083,7 @@
     "@opentelemetry/core" "1.13.0"
     "@opentelemetry/semantic-conventions" "1.13.0"
 
-"@opentelemetry/sdk-logs@0.39.1":
+"@opentelemetry/sdk-logs@0.39.1", "@opentelemetry/sdk-logs@^0.39.1":
   version "0.39.1"
   resolved "https://registry.yarnpkg.com/@opentelemetry/sdk-logs/-/sdk-logs-0.39.1.tgz#888af05458af5d097d6263ade118e8db78f76f38"
   integrity sha512-/gmgKfZ1ZVFporKuwsewqIyvaUIGpv76JZ7lBpHQQPb37IMpaXO6pdqFI4ebHAWfNIm3akMyhmdtzivcgF3lgw==

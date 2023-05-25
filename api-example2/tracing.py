@@ -7,7 +7,6 @@ from opentelemetry.sdk.trace.export import (
 import os
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
-from opentelemetry.propagators.b3 import B3Format
 
 def initialize_tracer():
     # Create a Resource instance
@@ -17,10 +16,9 @@ def initialize_tracer():
 
     # Create a TracerProvider instance
     provider = TracerProvider(resource=resource)
-    #propagator = B3Format()
 
     # Create an OTLP SpanExporter and BatchSpanProcessor
-    span_exporter = OTLPSpanExporter(endpoint='http://0.0.0.0:4317')
+    span_exporter = OTLPSpanExporter(endpoint=os.environ.get("OTEL_EXPORTER_OTLP_ENDPOINT"))
     processor = BatchSpanProcessor(span_exporter)
 
     # Add the processor to the TracerProvider

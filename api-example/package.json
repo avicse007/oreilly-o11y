@@ -38,7 +38,9 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@opentelemetry/api-logs": "^0.39.1",
     "@opentelemetry/instrumentation": "latest",
+    "@opentelemetry/sdk-logs": "^0.39.1",
     "@opentelemetry/sdk-node": "latest",
     "@opentelemetry/tracing": "^0.24.0",
     "dotenv": "^16.0.3"
