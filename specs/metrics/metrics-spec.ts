@@ -1,7 +1,7 @@
 /**
  * Measurement Spec, via Event Model
  */
-{
+interface Measurement {
     name: String;
     description: String;
     unit: String;
