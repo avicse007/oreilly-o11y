@@ -1,3 +1,4 @@
+
 export interface LogRecord {
     /**
      * The time when the log record occurred as UNIX Epoch time in nanoseconds.
